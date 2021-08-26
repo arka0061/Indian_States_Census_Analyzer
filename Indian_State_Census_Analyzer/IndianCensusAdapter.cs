@@ -10,15 +10,7 @@ namespace Indian_State_Census_Analyzer
     public class IndianCensusAdapter : CensusAdapter
     {
         string[] censusData;
-        Dictionary<string, CensusDTO> dataMap;
-
-        /// <summary>
-        /// load the census data
-        /// </summary>
-        /// <param name="csvFilePath"></param>
-        /// <param name="dataHeaders"></param>
-        /// <returns></returns>
-
+        Dictionary<string, CensusDTO> dataMap;  
         internal Dictionary<string, CensusDTO> LoadCensusData(string csvFilePath, string dataHeaders)
         {
             dataMap = new Dictionary<string, CensusDTO>();
